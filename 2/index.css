@@ -170,7 +170,7 @@ header table {
 }
 #work {
     width:92vw;
-    padding:6vh 4vw;
+    padding: 6vh 4vw;
     font-weight:bold;
 }
 #work h1 {
@@ -180,19 +180,20 @@ header table {
 }
 #photos {
     width:100%;
-    columns:3;
+    columns: 2;
     column-gap:4%;
     z-index:1;
     transition:0.4s ease-in-out;
 }
 #photos img {
     width:100%;
-    height:auto;
+    height:350px;
     margin:4.5% 0px;
     transition:0.4s ease-in-out;
+    object-fit: cover;
 }
 #photos img:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
     cursor: pointer;
 }
 #bio {
@@ -288,19 +289,6 @@ header table {
 }
 button:focus {
     outline:none;
-}
-::-webkit-scrollbar {
-    width:5px;
-    height:5px;
-}
-::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-}
-::-webkit-scrollbar-thumb {
-    background: rgb(0, 0, 0); 
-}
-::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0,0.8); 
 }
 
 @media (max-width: 1000px){
