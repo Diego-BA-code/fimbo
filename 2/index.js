@@ -64,4 +64,14 @@ $(document).ready(function(){
        } 
       });
   });
-  
+  //Cargar archivo que muestra un proyecto al hacer click
+$(document).ready(function(){
+    $("#1").click(function(){
+        $("#project").load("project.html", function(responseTxt, statusTxt, xhr){
+            // if(statusTxt == "success")
+            //     alert("External content loaded successfully!");
+            // if(statusTxt == "error")
+            //     alert("Error: " + xhr.status + ": " + xhr.statusText);
+        });
+    });
+});

@@ -98,6 +98,22 @@ header table {
 #navigation a:hover{
     border-bottom:2px solid #fff;
 }
+.project{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    text-align:left;
+    width:92vw;
+    padding: 25vh 4vw;
+}
+.project img {
+       display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+}
 #top_part {
     width:100%;
     border:2vh solid #fff;
@@ -292,6 +308,9 @@ button:focus {
 }
 
 @media (max-width: 1000px){
+    .project {
+        padding: 25vh 4vw;
+    }
     #photos {
     columns:1;
     column-gap:0%;
